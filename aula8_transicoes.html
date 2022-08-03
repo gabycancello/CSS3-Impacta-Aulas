@@ -1,0 +1,97 @@
+﻿<html lang="pt-br">
+<head>
+<title>CSS3  - Impacta</title>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+<meta charset="UTF-8">
+<style>
+header{
+background:#99ccff;
+width:400px;
+height:auto;
+float:left;
+/*top right bottom left*/
+padding:10px 0 20px 10px;
+}
+section{
+background:#ccc;
+width:900px;
+heigth:auto;
+margin:20px 40px;
+float:left;
+}
+@font-face{
+font-family:"Even";
+src:url("../fonts/Even Badder Mofo.ttf") format("truetype");
+}
+article header h1{
+font-weight:normal;
+font:italic 49px "Even";
+}
+article header h2{
+font:39px "Lobster";
+}
+div#galeria{
+border:2px dashed #000;
+width:700px;
+height:auto;
+float:left;
+clear:left;
+margin:10px 20px;
+padding:8px;
+}
+div#galeria div{
+width:300px;
+height:180px;
+border:8px solid #999;
+float:left;
+/*top right bottom left*/
+margin:10px 10px 0 0;
+opacity:0.3;
+-webkit-transition:all 0.5s ease-in;
+}
+div#galeria div:hover{
+cursor:pointer;
+opacity:1;
+}
+
+
+div#galeria div:nth-child(1){
+background-image:url(../Impacta_css/imagens/0110_PAL_Photo.png);
+background-position:0 -80px;
+}
+div#galeria div:nth-child(2){
+background-image:url(../Impacta_css/imagens/0066_PAL_Photo.png);
+background-position:0 -80px;
+}
+div#galeria div:nth-child(3){
+background-image:url(../Impacta_css/imagens/0141_PAL_Photo.png);
+background-position:0 -80px;
+}
+div#galeria div:nth-child(4){
+background-image:url(../Impacta_css/imagens/0073_PAL_Photo.png);
+background-position:0 -80px;
+}
+
+</style>
+</head>
+<body>
+	<header>Trabalhando com CSS3</br>
+	Transições animadas
+	</header>
+	<section>
+		<article>
+		<header>
+			<h1>Aprendendo CSS3</h1>
+			<h2>Transições com evento de mouse</h2>
+		</header>
+		<p>Conteúdo do primeiro parágrafo</p>
+		<div id="galeria">
+			<div id="foto1"></div>
+			<div id="foto2"></div>
+			<div id="foto3"></div>
+			<div id="foto4"></div>
+		</div>
+		</article>
+	</section>	
+		</body>
+</html>

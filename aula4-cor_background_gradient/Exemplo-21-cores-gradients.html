@@ -1,0 +1,63 @@
+﻿<html lang="pt-br">
+<head>
+<title>CSS3  - Impacta</title>
+<meta charset="UTF-8">
+<style>
+header{
+background:#99ccff;
+width:400px;
+height:auto;
+/*top right bottom left*/
+padding:10px 0 20px 10px;
+}
+section{
+background:#eee;
+width:800px;
+heigth:auto;
+margin:20px 40px;
+background-image:url(../imagens/0141_PAL_Photo.png);
+background-repeat:no-repeat;
+}
+div#cor-01{
+width:200px;
+height:200px;
+/*h=hue(tonalidade) | s=saturation | l=ligthness*/
+background-color:hsla(290,60%,70%,0.6);
+}
+div#cor-02{
+width:800px;
+height:200px;
+background-color:rgba(60%,40%,30%,0.5);
+}
+div#cor-03{
+width:200px;
+height:200px;
+background-image:-webkit-linear-gradient(45deg,red,green,blue);
+}
+div#cor-04{
+width:200px;
+height:200px;
+background-image:-webkit-radial-gradient(circle,red,green,blue);
+border-radius:50%;
+}
+section article p{
+color:rgba(0,0,255,1);
+}
+</style>
+</head>
+<body>
+	<header>Trabalhando com CSS3</br>
+	Posicionando e Alinhando conteúdo
+	</header>
+	<section>
+		<article>
+		<p>Conteúdo do primeiro parágrafo</p>
+		<div id="cor-01"></div>
+		<div id="cor-02"></div>
+		<div id="cor-03"></div>
+		<div id="cor-04"></div>
+		
+		</article>
+	</section>	
+		</body>
+</html>

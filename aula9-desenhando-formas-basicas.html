@@ -1,0 +1,97 @@
+﻿<html lang="pt-br">
+<head>
+<title>CSS3  - Impacta</title>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster" />
+<meta charset="UTF-8">
+<style>
+header{
+background:#99ccff;
+width:400px;
+height:auto;
+float:left;
+/*top right bottom left*/
+padding:10px 0 20px 10px;
+}
+section{
+background:#ccc;
+width:900px;
+heigth:auto;
+margin:20px 40px;
+float:left;
+}
+@font-face{
+font-family:"Even";
+src:url("../fonts/Even Badder Mofo.ttf") format("truetype");
+}
+article header h1{
+font-weight:normal;
+font:italic 49px "Even";
+}
+article header h2{
+font:39px "Lobster";
+}
+.transicao:hover{
+cursor:pointer;
+-webkit-transition:all 2s ease-out;
+/*opacity:0.5;*/
+transform:scale(0.5);
+border:10px dashed blue;
+border-radius:50%;
+}
+div#circulo{
+width:120px;
+height:120px;
+background-color:orange;
+float:left;
+margin:0 10px;
+border-radius:50%;
+}
+div#triangulo{
+width:0;
+height:0;
+border-left:50px solid transparent;
+border-right:50px solid transparent;
+border-bottom:100px solid green;
+float:left;
+margin:0 10px;
+}
+div#poligono{
+width:0;
+height:0;
+border:50px solid transparent;
+border-bottom-color:#333399;
+position:relative;
+top:-50px;
+float:left;
+margin:0 10px;
+}
+div#poligono:after{
+content:"";
+width:0;
+height:0;
+border:50px solid transparent;
+border-top-color:#333399;
+position:absolute;
+top:50px;
+left:-50px;
+}
+</style>
+</head>
+<body>
+	<header>Trabalhando com CSS3</br>
+	Desenhos, Animações e Parallax
+	</header>
+	<section>
+		<article>
+		<header>
+			<h1>Desenhando com CSS3</h1>
+			<h2>Formas Básicas</h2>
+		</header>
+		<div id="circulo"></div>
+		<div id="triangulo"></div>
+		<div id="poligono"></div>
+	
+		</article>
+	</section>	
+		</body>
+</html>

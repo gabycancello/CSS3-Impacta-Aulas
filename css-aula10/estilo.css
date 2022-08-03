@@ -1,0 +1,47 @@
+﻿@charset "UTF-8";
+
+/*Reset*/
+* {
+margin:0;
+padding:0;
+}
+
+body{
+width:100%;
+}
+
+section.parallax{
+font-family:"Elsie",cursive;
+background-position:50% 0;
+background-repeat:repeat;
+background-attachment:fixed;
+max-width:1920px;
+width:100%;
+margin:0 auto;
+text-shadow:1px 1px 2px rgba(0,0,0,0.7);
+color:#fff;
+position:relative;
+}
+section.parallax article{
+width:70%;
+height:500px;
+text-align:center;
+margin:0 auto;
+padding:20% 0 0 0;
+position:relative;
+}
+section.parallax h1{
+font-size:40px;
+}
+section.parallax p{
+line-height:1.5em;
+margin-top:15px;
+font-size:18px;
+}
+/*Missao*/
+section#missao{
+background-image:url(../imagens/universo.jpg);
+}
+section#sobre{
+background-image:url(../imagens//floresta.jpg);
+}
